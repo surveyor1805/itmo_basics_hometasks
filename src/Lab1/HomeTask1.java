@@ -18,7 +18,7 @@ public class HomeTask1 {
 
         // item 3
         int number = 10500;
-        int result = (number / 10) / 10;
+        double result = ((double)number / 10) / 10;
         System.out.println("(3) Результат выражения: " + result);
 
         // item 4
