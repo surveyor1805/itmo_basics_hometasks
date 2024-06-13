@@ -25,10 +25,7 @@ public class Methods {
             charsReversed[chars.length - 1 - i] = chars[i];
         }
         String wordReversed = new String(charsReversed);
-        if (sameWordCaseIgnore.equals(wordReversed)) {
-            return true;
-        }
-        return false;
+        return sameWordCaseIgnore.equals(wordReversed);
     }
 
     //Метод для подсчета вхождений подстроки
