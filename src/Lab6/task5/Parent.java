@@ -12,14 +12,10 @@ public class Parent {
 
     public Parent getInfo() {
         System.out.println("Введите возраст пользователя: ");
-        while (sc.hasNext()) {
-            if (sc.hasNextDouble()) {
+            do {
                 age = sc.nextDouble();
-                break;
-            } else {
-                System.out.println("Ошибка ввода. Повторите ввод: ");
             }
-        }
+            while (age == 0);
         return this;
     }
 
