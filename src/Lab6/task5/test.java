@@ -3,8 +3,10 @@ package Lab6.task5;
 public class test {
     public static void main(String[] args) {
         Child child = new Child();
-        System.out.println(child.getInfo().toString());
+        child.setInfo();
+        child.getInfo();
         Parent parent = new Parent();
-        System.out.println(parent.getInfo().toString());
+        parent.setInfo();
+        parent.getInfo();
     }
 }

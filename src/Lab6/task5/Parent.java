@@ -10,16 +10,15 @@ public class Parent {
         sc = new Scanner(System.in);
     }
 
-    public Parent getInfo() {
+    public void setInfo() {
         System.out.println("Введите возраст пользователя: ");
-            do {
-                age = sc.nextDouble();
-            }
-            while (age == 0);
-        return this;
+        do {
+            age = sc.nextDouble();
+        }
+        while (age == 0);
     }
-
-    public String toString() {
-        return "Возраст объекта: " + this.age;
+    public void getInfo() {
+        System.out.println("Установлен возраст пользователя:");
+        System.out.println(age);
     }
 }

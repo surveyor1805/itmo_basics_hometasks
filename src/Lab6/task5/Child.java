@@ -3,16 +3,15 @@ package Lab6.task5;
 public class Child extends Parent {
     protected String name;
 
-    public Child getInfo() {
+    public void setInfo() {
         System.out.println("Введите имя пользователя: ");
         do {
             name = sc.nextLine();
         }
         while (name.isEmpty());
-        return this;
     }
-
-    public String toString() {
-        return "Имя объекта: " + this.name;
+    public void getInfo() {
+        System.out.println("Установлено имя пользователя:");
+        System.out.println(name);
     }
 }
