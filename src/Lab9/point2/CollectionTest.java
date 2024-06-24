@@ -1,10 +1,14 @@
 package Lab9.point2;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
 
 public class CollectionTest {
-    public static HashSet getWithoutDuplicates(Collection collection) {
-        return new HashSet(collection);
+    public static <T> HashSet<T> getWithoutDuplicates(Collection<T> collection) {
+        return new HashSet<>(collection);
     }
 
     public static void main(String[] args) {
